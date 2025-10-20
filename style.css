@@ -219,19 +219,36 @@ body {
 }
 
 .botao-pedido a {
-    background-color: #8be63f;
-    color: #000;
-    text-decoration: none;
-    padding: 18px 60px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  background-color: #8be63f;
+  color: #000;
+  text-decoration: none;
+  padding: 18px 60px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  outline: none;
 }
+
+.botao-pedido a:focus,
+.botao-pedido a:active,
+.botao-pedido a:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.botao-pedido a:hover {
+  background-color: #76cc36;
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 #4d9124, 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .botao-pedido a:hover {
     background-color: #76cc36;
